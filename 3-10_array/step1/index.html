@@ -11,13 +11,14 @@
 <body>
 <header>
 <div class="container">
-<h1>FizzBuzz</h1>
-<h2>３０までの数字で</h2>
+<h1>項目リストを表示する</h1>
+<h2>項目をHTMLに出力する</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
+  <h1>やることリスト</h1>
 </section>
 </div><!-- /.container -->
 </main>
@@ -29,20 +30,8 @@
 <script>
 'use strict';
 
-function fizzbuzz(num) {
-  if(num % 3 === 0 && num % 5 === 0) {
-    return 'fizzubuzz';
-  } else if(num % 3 === 0) {
-    return 'fizz';
-  } else if(num % 5 === 0) {
-    return 'buzz';
-  } else {
-    return num;
-  }
-}
-
-console.log(fizzbuzz(6));
-
+let todo = ['デザインカンプの作成','データの処理','勉強会の申し込み','牛乳を買う'];
+console.log(todo[0]);
 </script>
 </body>
 </html>
