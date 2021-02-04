@@ -11,8 +11,8 @@
 <body>
 <header>
 <div class="container">
-<h1>数当てゲーム</h1>
-<h2>さまざまな比較演算子を使用する</h2>
+<h1>アイテムの価格と在庫を表示する</h1>
+<h2>HTMLに出力する</h2>
 </div><!-- /.container -->
 </header>
 <main>
@@ -29,19 +29,16 @@
 <script>
 'use strict';
 
-const number = Math.floor(Math.random() * 6);
-const answer = parseInt(window.prompt('数当てゲーム。0~5の数字を入力してね。'));
-let message;
-if(answer === number) {
-  message = '当たり';
-} else if(answer < number) {
-  message = '残念でした。もっと大きい';
-} else if (amswer > number) {
-  message = '残念でした。もっと小さい';
-} else {
-  message = '0~5までの数字を入力してね';
+let jsbook = {title: 'Javascript入門', price: 2500, stock:3};
+
+for(let p in jsbook) {
+  console.log(p + '=' +jsbook[p]);
 }
-window.alert(message);
+// console.log(jsbook);
+// console.log(jsbook.title);
+// console.log(jsbook['price']);
+// jsbook.stock = 10
+// console.log(jsbook.stock);
 </script>
 </body>
 </html>

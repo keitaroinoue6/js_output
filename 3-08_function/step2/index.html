@@ -11,13 +11,14 @@
 <body>
 <header>
 <div class="container">
-<h1>数当てゲーム</h1>
-<h2>さまざまな比較演算子を使用する</h2>
+<h1>税込価格を計算する</h1>
+<h2>HTMLに出力する</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
+  <P id = "output"></P>
 </section>
 </div><!-- /.container -->
 </main>
@@ -29,19 +30,13 @@
 <script>
 'use strict';
 
-const number = Math.floor(Math.random() * 6);
-const answer = parseInt(window.prompt('数当てゲーム。0~5の数字を入力してね。'));
-let message;
-if(answer === number) {
-  message = '当たり';
-} else if(answer < number) {
-  message = '残念でした。もっと大きい';
-} else if (amswer > number) {
-  message = '残念でした。もっと小さい';
-} else {
-  message = '0~5までの数字を入力してね';
+function total(price) {
+  const tax = 0.1;
+  return price + price * tax;
 }
-window.alert(message);
+
+console.log('コーヒーメーカの値段は' + total(8000) + '円(税込み)です。');
+document.getElementById("output").textContent = 'コーヒメーカーの値段は' + total(8000) + '円税込みです';
 </script>
 </body>
 </html>

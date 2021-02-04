@@ -11,13 +11,14 @@
 <body>
 <header>
 <div class="container">
-<h1>数当てゲーム</h1>
-<h2>さまざまな比較演算子を使用する</h2>
+<h1>コンソールでモンスターを倒せ</h1>
+<h2>繰り返しの回数をカウントする</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
+  <P>戦闘の状況はコンソールでチェック</P>
 </section>
 </div><!-- /.container -->
 </main>
@@ -29,19 +30,15 @@
 <script>
 'use strict';
 
-const number = Math.floor(Math.random() * 6);
-const answer = parseInt(window.prompt('数当てゲーム。0~5の数字を入力してね。'));
-let message;
-if(answer === number) {
-  message = '当たり';
-} else if(answer < number) {
-  message = '残念でした。もっと大きい';
-} else if (amswer > number) {
-  message = '残念でした。もっと小さい';
-} else {
-  message = '0~5までの数字を入力してね';
+let enemy = 100;
+
+window.alert('戦闘スタート');
+while(enemy > 0) {
+  const attack = Math.floor(Math.random() * 30) + 1;
+  console.log('モンスターに' + attack + 'のダメージ');
+  enemy = enemy - attack;
 }
-window.alert(message);
+console.log('モンスターを倒した');
 </script>
 </body>
 </html>
