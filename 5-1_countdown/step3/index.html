@@ -58,8 +58,8 @@ function recalc() {
   const counter = countdown(goal);
   document.getElementById('day').textContent = counter[0];
   document.getElementById('hour').textContent = counter[1];
-  document.getElementById('miin').textContent = counter[2];  
-  document.getElementById('sec').textContent = counter[3];  
+  document.getElementById('min').textContent = String(counter[2]).padStart(2, '0'); 
+  document.getElementById('sec').textContent = String(counter[3]).padStart(2, '0');
   // const time = `${counter[1]}時間${counter[2]}分${counter[3]}秒`;
   // document.getElementById('timer').textContent = time;
   refresh();
