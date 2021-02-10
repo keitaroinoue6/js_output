@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7-02_api</title>
+<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../../_common/css/style.css" rel="stylesheet">  
+</head>
+<body>
+<header>
+<div class="container">
+<h1>webAPIを使ってみよう</h1>
+<h2>天気予報</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script src="../../_common/scripts/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+<script>
+  // 'use strict';
+
+  // //geolocation
+  // function success (pos) {
+  //   ajaxRequest(pos.coords.latitude, pos.coords.longitude);
+  // }
+
+  // function fail (error) {
+  //   alert('位置情報の取得に失敗しました. エラーコード:' + error.code);
+  // }
+
+  // navigator.geolocation.getCurrentPosition(success, fail);
+
+  // //データ取得
+  // function ajaxReques (lat, long) {
+  //   const url = 'https://api.openweathermap.org/data/2.5/forecast';
+  //   const appId = '12025ecc15515226763c056fdcca25e2'
+
+  //   $.ajax({
+  //     url: url,
+  //     data: {
+  //       appid: appId,
+  //       lat: lat,
+  //       long: long,
+  //       units: 'metric',
+  //       lang: 'ja'
+  //     }
+  //   })
+  //   .done(function(data) {
+  //     console.log(data);
+  //   })
+  //   .fail(function(){
+  //     console.log('$.ajax failed!');
+  //   })
+  // }
+</script>
+</body>
+</html>
+
